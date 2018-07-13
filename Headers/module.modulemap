@@ -1,4 +1,0 @@
-module Laziable {
-    header "Laziable.h"
-    export *
-}
