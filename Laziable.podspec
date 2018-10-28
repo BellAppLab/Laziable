@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                = "Laziable"
-  s.version             = "1.0.0"
+  s.version             = "1.0.1"
   s.summary             = "When 'lazy var' doesn't cut it, have a truly Lazy variable in Swift."
   s.screenshot          = "https://github.com/BellAppLab/Laziable/raw/master/Images/laziable.png"
 

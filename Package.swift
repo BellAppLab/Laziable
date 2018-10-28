@@ -14,7 +14,8 @@ let package = Package(
         ),
         .testTarget(
             name: "LaziableTests",
-            dependencies: ["Laziable"]),
-        ],
+            dependencies: ["Laziable"]
+        ),
+    ],
     swiftLanguageVersions: [3, 4]
 )
