@@ -29,12 +29,6 @@ private final class PThreadMutex {
     return try work()
   }
 
-  func trySync<R>(execute work: () throws -> R) rethrows -> R? {
-    guard unbalancedTryLock() else { return nil }
-    defer { unbalancedUnlock() }
-    return try work()
-  }
-
   private var unsafeMutex = pthread_mutex_t()
 
   /// Default constructs as ".Normal" or ".Recursive" on request.
@@ -56,10 +50,6 @@ private final class PThreadMutex {
 
   private func unbalancedLock() {
     pthread_mutex_lock(&unsafeMutex)
-  }
-
-  private func unbalancedTryLock() -> Bool {
-    return pthread_mutex_trylock(&unsafeMutex) == 0
   }
 
   private func unbalancedUnlock() {
@@ -158,9 +148,9 @@ public final class Lazy<Value>: CustomStringConvertible
     @nonobjc
     public var description: String {
         if let tempValue = _value {
-            return "Lazy<\(type(of: tempValue))>: constructor - \(constructor); value: \(tempValue)"
+            return "Lazy<\(type(of: tempValue))>: constructor - \(String(describing: constructor)); value: \(tempValue)"
         }
-        return "Lazy: constructor - \(constructor); value: nil"
+        return "Lazy: constructor - \(String(describing: constructor)); value: nil"
     }
 }
 
