@@ -17,5 +17,5 @@ let package = Package(
             dependencies: ["Laziable"]
         ),
     ],
-    swiftLanguageVersions: [3, 4]
+    swiftLanguageVersions: [4.2, 5.0]
 )

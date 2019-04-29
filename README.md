@@ -1,4 +1,4 @@
-# Laziable [![Version](https://img.shields.io/badge/Version-1.0.1-black.svg?style=flat)](#installation) [![License](https://img.shields.io/cocoapods/l/Laziable.svg?style=flat)](#license)
+# Laziable [![Version](https://img.shields.io/badge/Version-1.1.0-black.svg?style=flat)](#installation) [![License](https://img.shields.io/cocoapods/l/Laziable.svg?style=flat)](#license)
 
 [![Platforms](https://img.shields.io/badge/Platforms-iOS|watchOS|tvOS|macOS|watchOS-brightgreen.svg?style=flat)](#installation)
 [![Swift support](https://img.shields.io/badge/Swift-3.3%20%7C%204.1%20%7C%204.2-red.svg?style=flat)](#swift-versions-support)
@@ -23,7 +23,7 @@ So why not bring that awesomeness back to Swift in a very lightweight way?
 * tvOS 9+
 * watchOS 3+
 * macOS 10.10+
-* Swift 3.3+
+* Swift 4.2+
 
 ## Usage
 
@@ -107,7 +107,7 @@ Also, make sure to use `[weak self]` or `[unowned self]` if capturing `self` in 
 ### Cocoapods
 
 ```ruby
-pod 'Laziable', '~> 1.0'
+pod 'Laziable', '~> 1.1'
 ```
 
 Then `import Laziable` where needed.
@@ -115,7 +115,7 @@ Then `import Laziable` where needed.
 ### Carthage
 
 ```swift
-github "BellAppLab/Laziable" ~> 1.0
+github "BellAppLab/Laziable" ~> 1.1
 ```
 
 Then `import Laziable` where needed.
@@ -124,7 +124,7 @@ Then `import Laziable` where needed.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/BellAppLab/Laziable", from: "1.0.0")
+    .package(url: "https://github.com/BellAppLab/Laziable", from: "1.1.0")
 ]
 ```
 

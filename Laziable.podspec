@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name                = "Laziable"
-  s.version             = "1.0.1"
+  s.version             = "1.1.0"
   s.summary             = "When 'lazy var' doesn't cut it, have a truly Lazy variable in Swift."
   s.screenshot          = "https://github.com/BellAppLab/Laziable/raw/master/Images/laziable.png"
 
@@ -26,6 +26,8 @@ So why not bring that awesomeness back to Swift in a very lightweight way?
   s.watchos.deployment_target = "3.0"
   s.osx.deployment_target     = "10.10"
   s.tvos.deployment_target    = "9.0"
+
+  s.swift_version       = '5.0'
 
   s.module_name         = 'Laziable'
 
